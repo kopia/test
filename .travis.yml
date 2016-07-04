@@ -10,3 +10,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: kopia/test
+
+os:
+  - linux
+  - osx
