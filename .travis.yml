@@ -9,6 +9,7 @@ deploy:
   file: test
   skip_cleanup: true
   on:
+    tags: true
     repo: kopia/test
 
 os:
