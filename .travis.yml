@@ -1,17 +1,16 @@
 language: go
 go:
-- '1.13.x'
-deploy:
-  provider: releases
-  api_key:
-    secure: TGOhiXbYtz8dapRO+GAX+uGNa3suGlCKKlSSzER6qs6cvvJwRhwzEvnPE04P6GESk3H4gc+cqumvwMSV1mhOCl2KiIehnQMEpYFVmaGlFSvyULNdd/36pO26aJ3FDEKGwvxCbm8nUwsGZjr6MLNMVuyo5fm/IUKistGi55gt/oFNgdnwjletTCcsJ9XvWoTt4mJ3yRX6143zpTaZZtnED53hOtb3+Clfq1oOJ8tbTFxOl4Epk0JCaYDIlvQQZQPr43uWw9wZhsKiglKiSEGR9Z7Tw2vO9/jJsdOFSYpAykrQ+Rpsm2NjJ8Pfh+V4KXJ04ImEHPYwrqFZr8A1l3CgZyG5wzvmV1ScZo+s8X5j4HoGNk+auBo2cinBl3KBDdkymKs0NS6sZzbHMf3SfvsZ0QAHPEkUidB5O6v59M1UWrIKJutb2eWKJxxZ/Faz5pWDZCaAwOXjoESyP1pP77xamj7TAn8Um7pFtC72edXNJ4U9KhfuXAqpupQ539lT+109h+KQ65i8tMAqJV5jiuyM2FgiwJ0iswtMuT9azWc7w2spv2H0d5mFRvaoF/6ZZGmKcZzj60pswAgux8gByyvPPEiIwpkLrTzUNUxFjWYIAASkFnuOfFbaXGdeH0G+YccNXGrcoT8XjuZoBsJV9P03/F6y9UkGpw3e4aLfX4sg+6c=
-  file_glob: true
-  file: dist/*
-  skip_cleanup: true  
-  draft: true
-  on:
-    repo: kopia/test
-    tags: true
+- 1.13.x
 os:
 - linux
 - osx
+deploy:
+  provider: releases
+  api_key:
+    secure: kOtIIzB+WCq5bB5Y8TYjS/RqvNwKWtQ8sn4uF/FJ8eeXfWqsuaSukGMztSSEEDW8j4AK1snrzTbS/YrcFe5D3eUT34IsVTUn54T2FpBUBseQRoSbkTK4Qt9lfrRHW1OapfkOjkHpHpu71ukfhFdhYQAeg+WH3TQnF8NpkcS216vztNy3R6jJxvn9Lbo54LXoTh3yWpqi3mhLf4gRVNlano2bNOSEf9YO2bLSrU//+9r1B2q5AqPN+4h58KhOEmiQVLYpeajjOE50p/3pCu/H+zH1hx3a1KG5zGg3hveo3h3BRC2DGTMdn9TGnwTMJkYyRKACzl2tUmNIxKwwIxgjijEAj/pnYnHUoMaDMy2p0NtIGBJu11K7bC/FdrgO9YIgYujKgeCr6xMPvcA797eEfbU1hI3KA1WkFmLHbe7WdShYkJbTgQ4Lb4XtEIuGoj++dYez+2FBRCXTHsAOH8+FS55pgctZE4b2fEPm3OBz+NY2PE/qpzd4jGZMzDUbgrt9qxvzbygsPnn4im4IseCk+Gobb8vsmUTNg0oNIDgnXRStazOLI9p41P9yWnyYGKFPVb3lig9WtOld65QW8SSyV31XZRTFhdAQUAYYZ1FHbqfuRrWdd7pf7IKCMWRqwlKfRD6eylyGHF5xiHEHi7bKte+scGDoYkORYT/32Cu4jIU=
+  file_glob: true
+  file: "**/*"
+  skip_cleanup: true
+  on:
+    repo: kopia/test
+    tags: yes
