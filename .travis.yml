@@ -11,6 +11,7 @@ deploy:
   draft: true
   on:
     repo: kopia/test
+    tags: true
 os:
 - linux
 - osx
