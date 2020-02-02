@@ -5,8 +5,9 @@ deploy:
   provider: releases
   api_key:
     secure: TGOhiXbYtz8dapRO+GAX+uGNa3suGlCKKlSSzER6qs6cvvJwRhwzEvnPE04P6GESk3H4gc+cqumvwMSV1mhOCl2KiIehnQMEpYFVmaGlFSvyULNdd/36pO26aJ3FDEKGwvxCbm8nUwsGZjr6MLNMVuyo5fm/IUKistGi55gt/oFNgdnwjletTCcsJ9XvWoTt4mJ3yRX6143zpTaZZtnED53hOtb3+Clfq1oOJ8tbTFxOl4Epk0JCaYDIlvQQZQPr43uWw9wZhsKiglKiSEGR9Z7Tw2vO9/jJsdOFSYpAykrQ+Rpsm2NjJ8Pfh+V4KXJ04ImEHPYwrqFZr8A1l3CgZyG5wzvmV1ScZo+s8X5j4HoGNk+auBo2cinBl3KBDdkymKs0NS6sZzbHMf3SfvsZ0QAHPEkUidB5O6v59M1UWrIKJutb2eWKJxxZ/Faz5pWDZCaAwOXjoESyP1pP77xamj7TAn8Um7pFtC72edXNJ4U9KhfuXAqpupQ539lT+109h+KQ65i8tMAqJV5jiuyM2FgiwJ0iswtMuT9azWc7w2spv2H0d5mFRvaoF/6ZZGmKcZzj60pswAgux8gByyvPPEiIwpkLrTzUNUxFjWYIAASkFnuOfFbaXGdeH0G+YccNXGrcoT8XjuZoBsJV9P03/F6y9UkGpw3e4aLfX4sg+6c=
-  file: test
-  skip_cleanup: true
+  file_glob: true
+  file: dist/*
+  skip_cleanup: true  
   on:
     repo: kopia/test
 os:
