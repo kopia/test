@@ -3,3 +3,4 @@ install:
 
 perf-test:
 	echo Running performance test...
+	echo Some curl $(SOME_ENVAR) hello
