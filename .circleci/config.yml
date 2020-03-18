@@ -20,5 +20,4 @@ jobs:
     working_directory: /go/src/github.com/kopia/test
     steps:
       - checkout
-      - run: go test -v ./...
-      - run: cat /proc/cpuinfo
+      - run: make perf-test
